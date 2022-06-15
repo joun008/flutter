@@ -5,13 +5,11 @@ import '../../constants.dart';
 class MedalWeeks extends StatelessWidget {
   const MedalWeeks({
     Key? key,
-    required this.defaultPadding,
   }) : super(key: key);
-
-  final double defaultPadding;
 
   @override
   Widget build(BuildContext context) {
+    double defaultPadding = MediaQuery.of(context).size.height * 0.01;
     return Row(
       mainAxisAlignment: MainAxisAlignment.spaceBetween,
       children: [
@@ -74,7 +72,7 @@ class MedalWeeks extends StatelessWidget {
                   onPressed: () {},
                   backgroundColor: bgColor,
                   child: Icon(
-                    Icons.forest,
+                    Icons.grade,
                     color: subColor,
                     size: MediaQuery.of(context).size.height * 0.025,
                   ),
